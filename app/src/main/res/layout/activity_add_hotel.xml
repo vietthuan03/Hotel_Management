@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm khách sạn"
+        android:textSize="18sp"
+        android:textColor="#313dca"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_hotel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mường Thanh"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+    <RatingBar
+        android:id="@+id/hotelRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5" />
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Khách san đầy đủ tiện nghi"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btn_add_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+</LinearLayout>

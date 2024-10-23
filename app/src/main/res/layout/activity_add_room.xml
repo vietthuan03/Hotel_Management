@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm phòng"
+        android:textSize="18sp"
+        android:textColor="#313dca"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_room_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số phòng"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_room_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loại phòng"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_add_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>

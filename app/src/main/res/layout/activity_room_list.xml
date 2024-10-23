@@ -1,0 +1,54 @@
+<!-- res/layout/activity_admin_dashboard.xml -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Welcome to the room"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"/>
+        <AutoCompleteTextView
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bo_tron_edt"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/ct_font_medium"
+            android:hint="Tìm kiếm giá phòng"
+            android:padding="2dp"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+        <!-- RecyclerView for Rooms -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/roomRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/add"
+        app:srcCompat="@drawable/ic_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
